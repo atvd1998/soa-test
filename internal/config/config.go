@@ -13,11 +13,11 @@ type Config struct {
 		StopTimeout  time.Duration `env:"APP_STOP_TIMEOUT" envDefault:"1m"`
 	}
 	Postgresql struct {
-		Host            string        `env:"POSTGRESQL_HOST" envDefault:"3.1.28.125"`
-		Port            string        `env:"POSTGRESQL_PORT" envDefault:"5432"`
-		Username        string        `env:"POSTGRESQL_USERNAME" envDefault:"postgres"`
-		Password        string        `env:"POSTGRESQL_PASSWORD" envDefault:"M1sIWvQ2D4MfWke7ReSt2IFHVPRXtpp6"`
-		DbName          string        `env:"POSTGRESQL_DB_NAME" envDefault:"backend_test"`
+		Host            string        `env:"POSTGRESQL_HOST" envDefault:""`
+		Port            string        `env:"POSTGRESQL_PORT" envDefault:""`
+		Username        string        `env:"POSTGRESQL_USERNAME" envDefault:""`
+		Password        string        `env:"POSTGRESQL_PASSWORD" envDefault:""`
+		DbName          string        `env:"POSTGRESQL_DB_NAME" envDefault:""`
 		SSLMode         string        `env:"POSTGRESQL_SSL_MODE" envDefault:"disable"`
 		MaxIdleConns    int           `env:"POSTGRESQL_MAX_IDLE_CONNS" envDefault:"10"`
 		MaxOpenConns    int           `env:"POSTGRESQL_MAX_OPEN_CONNS" envDefault:"100"`
